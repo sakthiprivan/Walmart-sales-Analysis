@@ -105,23 +105,23 @@ orders.invoice_id - FOREIGN KEY
 
 ### Sales
 
-1.Number of sales made in each time of the sunday ?
-2.Which of the customer types brings the most revenue ?
-3.Which city has the largest tax/VAT percent ?
-4.Which customer type pays the most in Tax ?
+1.Number of sales made in each time of the sunday ?                                                                                                                
+2.Which of the customer types brings the most revenue ?                                                                                                            
+3.Which city has the largest tax/VAT percent ?                                                                                                                     
+4.Which customer type pays the most in Tax ?                                                                                                                       
 
 ### Customer
 
-1.How many unique customer types does the data have?
-2.How many unique payment methods does the data have?
-3.What is the most common customer type?
-4.Which customer type buys the most?
-5.What is the gender of most of the customers?
-6.What is the gender distribution in branch c?
-7.Which time of the day do customers give most ratings?
-8.Which time of the day do customers give most ratings in branch 'A'?
-9.Which day of the week has the best avg ratings?
-10.Which day of the week has the best average ratings for branch 'C'?
+1.How many unique customer types does the data have?                                                                                                               
+2.How many unique payment methods does the data have?                                                                                                              
+3.What is the most common customer type?                                                                                                                           
+4.Which customer type buys the most?                                                                                                                               
+5.What is the gender of most of the customers?                                                                                                                     
+6.What is the gender distribution in branch c?                                                                                                                     
+7.Which time of the day do customers give most ratings?                                                                                                            
+8.Which time of the day do customers give most ratings in branch 'A'?                                                                                              
+9.Which day of the week has the best avg ratings?                                                                                                                  
+10.Which day of the week has the best average ratings for branch 'C'?                                                                                             
 
 
 ## Revenue And Profit Calculations
