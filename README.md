@@ -86,7 +86,7 @@ orders.invoice_id - FOREIGN KEY
 
 ### Generic Question
 
-1.How many unique cities the data have ?
+1.How many unique cities the data have ?                                                                                                                           
 2.In which city is each branch ?
 
 ### Product
