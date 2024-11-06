@@ -91,16 +91,16 @@ orders.invoice_id - FOREIGN KEY
 
 ### Product
 
-1.How many unique product lines does the data have ?
-2.what is the most selling product line ?
-3.what is the total revenue by month ?
-4.What month had the largest COGS ?
-5.What product line had the largest revenue ?
-6.what is the city with the largest revenue ?
-7.What product line had the largest VAT ?
-8.Fetch each product line and add a column to those product line showing "Good" or "Bad". Good if its greater than average sales
-9.What is the most common product line by gender ? 
-10.what is the average rating of each product line ?
+1.How many unique product lines does the data have ?                                                                                                               
+2.what is the most selling product line ?                                                                                                                          
+3.what is the total revenue by month ?                                                                                                                             
+4.What month had the largest COGS ?                                                                                                                                
+5.What product line had the largest revenue ?                                                                                                                      
+6.what is the city with the largest revenue ?                                                                                                                      
+7.What product line had the largest VAT ?                                                                                                                          
+8.Fetch each product line and add a column to those product line showing "Good" or "Bad". Good if its greater than average sales                                   
+9.What is the most common product line by gender ?                                                                                                                 
+10.what is the average rating of each product line ?                                                                                                               
 
 
 ### Sales
