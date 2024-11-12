@@ -23,15 +23,15 @@ CREATE TABLE IF NOT EXISTS orders(
 	unit_price DECIMAL(10,2) NOT NULL,
 	quantity INT NOT NULL,
 	tax FLOAT(6,4) NOT NULL,	
-    total DECIMAL(10,2) NOT NULL, 
+    	total DECIMAL(10,2) NOT NULL, 
 	date DATE NOT NULL,
 	time TIME NOT NULL,
 	payment_method VARCHAR(30) NOT NULL,
-    cogs DECIMAL(10,2) NOT NULL,
+    	cogs DECIMAL(10,2) NOT NULL,
 	margin_percentage FLOAT(11,2),
 	gross_income DECIMAL(12, 2) NOT NULL,
 	rating FLOAT(3, 1),
-    CONSTRAINT FK_ORDERS FOREIGN KEY (invoice_id) REFERENCES customers(invoice_id)
+    	CONSTRAINT FK_ORDERS FOREIGN KEY (invoice_id) REFERENCES customers(invoice_id)
 );
 
 
