@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS orders(
 
 
 -- Data cleaning    
--- Adding day in day in day_name column
+-- Adding day in day_name column
 SELECT
 	date,
 	DAYNAME(date)
