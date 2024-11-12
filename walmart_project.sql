@@ -56,21 +56,21 @@ SELECT
 FROM orders;
 
 ALTER TABLE orders
-	ADD COLUMN month_name VARCHAR(10);
+ADD COLUMN month_name VARCHAR(10);
+
 UPDATE orders 
-	SET month_name = MONTHNAME(date);
+SET month_name = MONTHNAME(date);
     
     
            -- Generic --
 -- 1.How many unique cities does the data have?
-SELECT 
-	DISTINCT city
+SELECT DISTINCT city
 FROM customers;
 
 -- 2.In which city is each branch?
 SELECT 
 	DISTINCT city,
-    branch
+  	branch
 FROM customers;
 
            -- product --
@@ -83,7 +83,7 @@ FROM customers;
 -- 4.What is the most selling product line
 SELECT
 	SUM(o.quantity) as qty,
-    c.product_line
+    	c.product_line
 FROM customers c
 JOIN orders o
 	USING (invoice_id)
@@ -147,7 +147,7 @@ FROM orders;                                        -- now we find that avg qty 
 SELECT
 	c.product_line,
 	CASE
-		WHEN AVG(o.quantity) > 6 THEN "Good"
+	WHEN AVG(o.quantity) > 6 THEN "Good"
         ELSE "Bad"
     END AS status
 FROM customers c
@@ -157,8 +157,8 @@ GROUP BY c.product_line;
 -- 11.What is the most common product line by gender
 SELECT
 	gender,
-    product_line,
-    COUNT(gender) AS total_cnt
+    	product_line,
+    	COUNT(gender) AS total_cnt
 FROM customers
 GROUP BY gender, product_line
 ORDER BY total_cnt DESC;
@@ -198,7 +198,7 @@ ORDER BY count DESC;
 -- 16.Which customer type buys the most?
 SELECT
 	customer_type,
-    COUNT(*) AS no_of_customer
+    	COUNT(*) AS no_of_customer
 FROM customers
 GROUP BY customer_type
 ORDER BY no_of_customer DESC;
@@ -254,7 +254,7 @@ ORDER BY avg_rating DESC;                           -- Mon, Friday and sunday ar
 -- 22.Which day of the week has the best average ratings for branch 'C'?
 SELECT 
 	COUNT(o.day_name) AS Nos,
-    c.branch,
+   	c.branch,
 	o.day_name,
 	AVG(o.rating) AS ratings 
 FROM customers c
@@ -289,7 +289,7 @@ ORDER BY total_revenue;                       -- Most of the customers are in no
 -- 25.Which city has the largest tax/VAT percent?
 SELECT
 	c.city,
-    ROUND(AVG(o.tax), 2) AS avg_tax_pct
+    	ROUND(AVG(o.tax), 2) AS avg_tax_pct
 FROM customers c 
 JOIN orders o
 	USING (invoice_id)
