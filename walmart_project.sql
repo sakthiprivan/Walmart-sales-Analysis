@@ -43,7 +43,8 @@ SELECT
 	DAYNAME(date)
 FROM orders;
 
-ALTER TABLE orders ADD COLUMN day_name VARCHAR(10);
+ALTER TABLE orders 
+ADD COLUMN day_name VARCHAR(10);
 
 UPDATE orders
 SET day_name = DAYNAME(date);
